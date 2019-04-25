@@ -14,6 +14,7 @@
     "@sentry/cli": "^1.41.1",
     "@sentry/integrations": "^5.1.0",
     "@sentry/webpack-plugin": "^1.6.2",
+    "raven-js": "^3.27.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

@@ -67,7 +67,7 @@ export default {
   },
   methods:{
     onClick(){
-      aaa()
+      console.log(window.a.b)
     }
   }
 }

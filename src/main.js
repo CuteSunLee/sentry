@@ -7,24 +7,24 @@ import * as Sentry from "@sentry/browser";
 import * as Integrations from "@sentry/integrations";
 
 Vue.config.productionTip = false;
-
+console.log(process.env.NODE_ENV, "process.env.NODE_ENV");
 process.env.NODE_ENV === "production" &&
-  Sentry.init({
-    dsn: "https://dcbe2b666c72448195bd155b155d630e@sentry.io/1445249",
-    integrations: [
-      new Integrations.Vue({
-        Vue,
-        attachProps: true
-      }),
-      new Sentry.Integrations.RewriteFrames()
-    ],
-    release: process.env.RELEASE
-  });
+    Sentry.init({
+        dsn: "https://dcbe2b666c72448195bd155b155d630e@sentry.io/1445249",
+        integrations: [
+            new Integrations.Vue({
+                Vue,
+                attachProps: true
+            }),
+            new Integrations.RewriteFrames()
+        ],
+        release: process.env.RELEASE_VERSION
+    });
 
 /* eslint-disable no-new */
 new Vue({
-  el: "#app",
-  router,
-  components: { App },
-  template: "<App/>"
+    el: "#app",
+    router,
+    components: { App },
+    template: "<App/>"
 });
