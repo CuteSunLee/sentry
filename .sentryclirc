@@ -4,4 +4,4 @@ token="9c052e256fd843dbb3563b37952d739987a79a53f5d1495da0311392ae766c2e"
 [defaults]
 url = https://sentry.io
 org = yayaya
-project = demo
+project = test
