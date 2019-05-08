@@ -10,7 +10,7 @@ Vue.config.productionTip = false;
 console.log(process.env.NODE_ENV, "process.env.NODE_ENV");
 process.env.NODE_ENV === "production" &&
     Sentry.init({
-        dsn: "https://4ec86726f2ba40338f66837c6b959eed@sentry.io/1447158",
+        dsn: "https://13ba44e99a49426fbce535888e3a74a0@sentry.io/1454859",
         // dsn:
         //     "http://4cf10206ef27409bbb64f68ba014f905:a67a0eb5513e43ab883af3f3d66ca7f0@localhost:9000/2",
         integrations: [
@@ -21,6 +21,7 @@ process.env.NODE_ENV === "production" &&
             new Integrations.RewriteFrames()
         ],
         release: process.env.RELEASE_VERSION
+        // environment: process.env.NODE_ENV
     });
 
 /* eslint-disable no-new */

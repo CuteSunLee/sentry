@@ -1,7 +1,7 @@
 [auth]
-token="9c052e256fd843dbb3563b37952d739987a79a53f5d1495da0311392ae766c2e"
+token="e16075076f87411c8fa309c14d0dc2c93d80bc16751543c7be5ccfc4cda59fb8"
 
 [defaults]
 url = https://sentry.io
-org = yayaya
+org = yayaya-ye
 project = test
